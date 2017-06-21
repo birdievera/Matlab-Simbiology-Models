@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:mwsh="http://www.mathworks.com/namespace/mcode/v1/syntaxhighlight.dtd"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>SimBiology Report</title><style xmlns="">
+				BODY		{
+					margin: 0px 0px 0px 0px;
+					padding: 0px 0px 0px 0px;
+					}
+				
+				H1			{
+							margin: 0px 0px 0px 0px;
+							padding: 3px 0px 3px 3px;
+							font-family:Arial, Helvetica, sans-serif;
+							font-size: 20px;   /* font-size: 1.35em; */
+							color: #FFFFFF;
+							background: #33477A;
+							}
+				
+				H2			{
+							margin: 0px 0px 10px 0px;
+							font-family:Arial, Helvetica, sans-serif;
+							font-size: 16px; /* font-size: 1em; */
+							color: #333333;
+							display: inline;
+							}
+				TH			{
+							background: #6A80BF;
+							font-family: Arial, Helvetica, sans-serif;
+							font-size: 11px; /* font-size: .8em; */
+							color: #FFFFFF;
+							padding: 5px 0px 5px 5px;
+							text-align: left;
+							}
+							
+				LI          {
+							font-family: Arial, Helvetica, sans-serif;
+							font-size: 13px;
+							color: #000000;
+							text-align: left;
+                            }				
+				#contentContainer {
+							padding: 20px;
+							}
+				
+				#contentContainer A, A:LINK	{
+							font-family: Arial, Helvetica, sans-serif;
+							font-size: 11px;
+							}
+				
+				#dataTable 	{
+							margin: 10px 0px 10px 0px;
+							font-family: Arial, Helvetica, sans-serif;
+							width: 100%;
+							border: 1px solid #EEEEEE;
+							}
+				
+				#dataTable  tr td {
+							font-size: 11px; /* font-size: .8em; */
+							padding: 3px 0px 3px 5px;
+							border: 1px solid #EEEEEE;
+							}
+				
+				#dataTable tr.selected td {
+							background-color: #3d80df;
+							color: #ffffff;
+							font-weight: bold;
+							border-left: 1px solid #346DBE;
+							border-bottom: 1px solid #7DAAEA;
+							}
+				.evenRow		{
+							background-color: #F0F2F9;
+							}
+				.oddRow	{
+							background-color: #FFFFFF;
+							}
+				.footnote	{
+							font-family: Arial, Helvetica, sans-serif;
+							font-size: 11px; /* font-size: .8em; */
+							padding: 2px 0px 5px 5px;
+							text-align: right;
+							}
+				 
+				</style><link href="reportstylesheet.css" rel="stylesheet" type="text/css"/></head><body><p/><div xmlns="" style="text-align: center;"><img src="html\element1_img.jpg"/></div><p xmlns="" class="itemCaption">Diagram 1: LigandReceptor Diagram</p><br/><h2 xmlns="" class="section_header">LigandReceptor:Model Equations</h2><PRE xmlns="" class="section_desc">ODEs:
+d(Ligand)/dt = 1/Cell*(-ReactionFlux1)
+d(Complex)/dt = 1/Cell*(ReactionFlux1)
+d(Receptor)/dt = 1/Cell*(-ReactionFlux1)
+
+Fluxes:
+ReactionFlux1 = k1*Ligand*Receptor-k2*Complex
+
+Parameter Values:
+k1 = 0.05
+k2 = 0.025
+Cell = 1
+
+Initial Conditions:
+Ligand = 50
+Complex = 0
+Receptor = 100
+
+</PRE><br/><table xmlns="" id="analysisTable" width="100%" border="5" cellpadding="5" cellspacing="0" class="dataTable"><tbody><tr><th width="5%">#</th><th>Property</th><th>Value</th></tr><tr class="evenRow"><td>1</td><td>TimeStamp</td><td>21-Jun-2017 03:53 PM</td></tr></tbody></table><p xmlns="" class="itemCaption">Table 1: Overview</p><table xmlns="" id="analysisTable" width="100%" border="5" cellpadding="5" cellspacing="0" class="dataTable"><tbody><tr><th width="5%">#</th><th>Property</th><th>Value</th></tr><tr class="evenRow"><td>1</td><td>Stop Time</td><td>10.0 second</td></tr><tr class="oddRow"><td>2</td><td>Maximum Number of Logs</td><td>Infinity</td></tr><tr class="evenRow"><td>3</td><td>Maximum Wall Clock</td><td>Infinity</td></tr><tr class="oddRow"><td>4</td><td>OutputTimes</td><td>[]</td></tr></tbody></table><p xmlns="" class="itemCaption">Table 2: Simulation Time</p><table xmlns="" id="analysisTable" width="100%" border="5" cellpadding="5" cellspacing="0" class="dataTable"><tbody><tr><th width="5%">#</th><th>Property</th><th>Value</th></tr><tr class="evenRow"><td>1</td><td>Solver</td><td>ode15s (stiff/NDF)</td></tr><tr class="oddRow"><td>2</td><td>Absolute Tolerance Scaling</td><td>true</td></tr><tr class="evenRow"><td>3</td><td>Absolute Tolerance Step Size</td><td>[]</td></tr><tr class="oddRow"><td>4</td><td>Absolute Tolerance</td><td>1.0E-6</td></tr><tr class="evenRow"><td>5</td><td>Relative Tolerance</td><td>0.001</td></tr><tr class="oddRow"><td>6</td><td>Max Step</td><td>[]</td></tr></tbody></table><p xmlns="" class="itemCaption">Table 3: Solver Options</p><table xmlns="" id="analysisTable" width="100%" border="5" cellpadding="5" cellspacing="0" class="dataTable"><tbody><tr><th width="5%">#</th><th>Property</th><th>Value</th></tr><tr class="evenRow"><td>1</td><td>Dimensional Analysis</td><td>true</td></tr><tr class="oddRow"><td>2</td><td>Unit Conversion</td><td>false</td></tr><tr class="evenRow"><td>3</td><td>Default Species Dimension</td><td>concentration</td></tr></tbody></table><p xmlns="" class="itemCaption">Table 4: Compile Options</p><table xmlns="" id="analysisTable" width="100%" border="5" cellpadding="5" cellspacing="0" class="dataTable"><tbody><tr><th width="5%">#</th><th>Type</th><th>Name</th></tr><tr class="evenRow"><td>1</td><td>species</td><td>Cell.Ligand</td></tr><tr class="oddRow"><td>2</td><td>species</td><td>Cell.Complex</td></tr><tr class="evenRow"><td>3</td><td>species</td><td>Cell.Receptor</td></tr></tbody></table><p xmlns="" class="itemCaption">Table 5: States Logged for this Task</p><div xmlns="" align="center"><p class="IMG"><img src="html\file_element3_1.png"/></p><br/></div><p xmlns="" class="itemCaption">Figure 1: Analysis Plots</p><br xmlns=""/><br xmlns=""/><br xmlns=""/><br/><p class="footnote">
+            Report generated by SimBiology v5.6 on Wed Jun 21 18:25:57 EDT 2017</p></body></html>

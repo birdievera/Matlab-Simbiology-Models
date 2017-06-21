@@ -1,0 +1,118 @@
+body					{
+						margin: 4px;
+						padding: 0px;
+						align: center;
+						}
+.rpt_section			{
+						margin: 20px 20px 20px 20px;
+						padding: 0px 0px 20px 0px;
+						border-bottom: 1px dashed #CCCCCC;
+						}
+		
+h2.section_header		{
+						font-family: Arial, Helvetica, sans-serif;
+						font-size: 1em;
+						text-align: left;
+						margin: 0px 0px 10px 0px;
+						display: inline;
+						color: #333333;
+						}
+															
+.section_desc			{
+						font-family: Arial, Helvetica, sans-serif;
+						margin: 10px 10px 10px 10px;
+						padding: 0px 0px 0px 0px;
+						}
+
+.dataTable 				{
+						margin: 10px 10px 10px 10px;
+						font-family: "Lucida Grande", monospace;
+						width: 95%; 
+						border: 1px solid #eeeeee; 
+						}
+
+.dataTable  tr td 		{
+						font-size: 11px; /* font-size: .8em; */
+						padding: 3px 0px 3px 5px;
+						border: 1px solid #eeeeee;
+						}
+
+.dataTable tr.selected td 
+						{
+						background-color: #3d80df;
+						color: #ffffff;
+						font-weight: bold;
+						border-left: 1px solid #346dbe;
+						border-bottom: 1px solid #7daaea;
+						}
+p.itemCaption		{
+						font-family: Arial, Helvetica, sans-serif;
+						font-size: 1em;
+						text-align: center;
+						margin: 3px;
+						padding: 3px;
+						}						
+
+.oddRow		{
+						background-color: #f0f2f9;
+						}
+.evenRow	{
+						background-color: #ffffff;
+						}
+
+.rpt_section th			{
+						background: #6a80bf;
+						font-family: Arial, Helvetica, sans-serif;
+						font-size: 11px; /* font-size: .8em; */
+						color: #ffffff;
+						padding: 5px 0px 5px 5px;
+						text-align: left;
+						}
+
+.rpt_section tr a,
+.rpt_section tr a:active,
+.rpt_section tr a:link, 
+.rpt_section tr a:visited 
+						{ 
+						font-family: "Lucida Grande", monospace;
+						text-decoration: none;
+						} 
+          
+.rpt_section tr a:hover 
+            			{ 
+						font-family: "Lucida Grande", monospace;
+						text-decoration: underline;
+						} 
+
+.section table		{}
+.section_caption	{}
+
+.rpt_section IMG		{
+					margin: 10px;
+					text-align: center;
+					}
+					
+pre.codeinput {
+  margin: 0px 10px 0px 10px;
+	width: 95%;
+  background: #f0f2f9;
+  padding: 0px;
+
+}
+
+pre.codeinput { 	
+  word-wrap: break-word; 
+	padding:10px;
+}
+
+span.margin {margin: 15px 15px 15px 15px;
+             padding: 10px;}
+span.keyword {color: #0000FF}
+span.comment {color: #228B22}
+span.string {color: #A020F0}
+span.untermstring {color: #B20000}
+span.syscmd {color: #B28C00}
+
+pre.error {
+  color: red;
+}
