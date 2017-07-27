@@ -8,7 +8,6 @@ function simulate_ODE()
     % Also, since the value of B is small relative 
     % to the values of A and C, multiply B by 1?10
     % before plotting the values.
-    
     sim('custom_model')
     yout(:,2) = 1e4*yout(:,2);
     figure;
